@@ -22,7 +22,7 @@ Este repositório contém o código-fonte da landing page de uma cafeteria. O de
 
 ## Deploy
 
-Veja a landing page em funcionamento [aqui](https://www.exemplo.com).
+Veja a landing page em funcionamento [aqui](https://devysonsilva.github.io/Dev-cafe/).
 
 ## Contribuição
 
