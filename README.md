@@ -17,8 +17,6 @@ Este repositório contém o código-fonte da landing page de uma cafeteria. O de
 
 * CSS3
 
-* JavaScript
-
 
 ## Deploy
 
