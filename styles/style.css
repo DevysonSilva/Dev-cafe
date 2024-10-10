@@ -111,6 +111,7 @@ section{
   background: url("../assets/home-img.jpg");
   background-position: center;
   background-size: cover;
+  min-height: 100vh;
   
 }
 
@@ -129,7 +130,7 @@ min-height: 100vh;
   
 }
 
-.content h3{
+.content h1{
   
   color: #fff;
   font-size: 6rem;
@@ -240,7 +241,7 @@ min-height: 100vh;
   
 }
 
-.menu .box-container .box .price spam{
+.menu .box-container .box .price span{
   
   font-size: 1.5rem;
   text-decoration: line-through;
@@ -326,4 +327,75 @@ min-height: 100vh;
   
   background-color: var(--main-color);
   
+}
+
+/* Esconde a navegação em telas pequenas */
+@media (max-width: 768px) {
+    .navbar {
+      
+        display: none;
+        
+    }
+
+    /* Mostra o ícone do menu */
+    .header .icons {
+      
+        display: block;
+        
+    }
+
+    /* Menu responsivo quando ativado */
+    .navbar.active {
+      
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 1rem;
+        
+    }
+
+    .navbar.active a {
+      
+        padding: 1rem;
+        text-align: center;
+        color: white;
+        border-bottom: 1px solid #555;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .about .container-image img {
+        width: 100%;
+        height: auto;
+        max-width: 600px; /* Define um tamanho máximo para telas pequenas */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajuste a altura do cabeçalho */
+    header {
+        padding: 10px 20px;
+        height: auto; /* Ajusta a altura automática para o conteúdo */
+    }
+
+    /* Ajuste a navegação */
+    .navbar {
+        font-size: 14px; /* Reduz o tamanho da fonte para o menu */
+        padding: 10px 0;
+    }
+
+    /* Ajuste o espaçamento dos itens de navegação */
+    .navbar ul li {
+        margin: 10px 0; /* Aumenta o espaçamento entre os itens do menu */
+    }
+
+    /* Ajuste o ícone de menu */
+    .menu-toggle i {
+        font-size: 24px; /* Reduz o tamanho do ícone do menu */
+    }
 }
